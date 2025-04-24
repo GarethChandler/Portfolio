@@ -3,11 +3,11 @@ function About() {
     <>
       <section
         id="about"
-        className="bg-[#0a0a0a] text-[#f3f4f6] flex h-[90vh] flex-col items-center p-9 rem"
+        className="bg-[#353B3C] text-[#f3f4f6] flex h-[90vh] flex-col items-center p-9 rem"
       >
         <h1>About & Career</h1>
         <p className="max-w-[1000px] text-center">
-          <span className="font-bold text-lg text-[#facc15]">
+          <span className="font-bold text-lg text-[#8093F1]">
             Business Systems Analyst Problem Solver Tech Innovator
             <br />
           </span>

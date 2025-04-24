@@ -36,7 +36,7 @@ function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-[#0a0a0a] text-[#f3f4f6] p-4 rounded-4xl shadow-lg"
+              className="bg-[#353B3C] text-[#f3f4f6] p-4 rounded-4xl shadow-lg"
             >
               <img
                 src={project.imageUrl}

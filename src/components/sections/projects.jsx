@@ -36,16 +36,22 @@ function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-[#353B3C] text-[#f3f4f6] p-4 rounded-4xl shadow-lg"
+              className="group bg-[#353B3C] text-[#f3f4f6] p-4 rounded-4xl shadow-lg"
             >
               <img
                 src={project.imageUrl}
                 alt={project.courseName}
                 className="w-full h-48 object-cover rounded-t-lg"
               />
-              <h2 className="text-xl font-bold mt-2">{project.courseName}</h2>
-              <p className="mt-2">{project.description}</p>
-              <p className="mt-2">Time to complete: {project.timeToComplete}</p>
+              <h2 className="text-xl font-bold mt-2 group-hover:scale-105 transition-transform duration-300">
+                {project.courseName}
+              </h2>
+              <p className="mt-2 group-hover:scale-105 transition-transform duration-300">
+                {project.description}
+              </p>
+              <p className="mt-2 group-hover:scale-105 transition-transform duration-300">
+                Time to complete: {project.timeToComplete}
+              </p>
             </div>
           ))}
         </div>

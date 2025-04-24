@@ -3,13 +3,14 @@ function Contact() {
     <>
       <section
         id="contact"
-        className="bg-[#353B3C] text-[#f3f4f6] flex h-[90vh] flex-col items-center justify-start w-[100%] p-3 rem"
+        className="bg-[#353B3C] text-[#f3f4f6] h-[90vh] w-[100%] px-20 flex flex-col justify-between"
+        // className="bg-[#353B3C] text-[#f3f4f6] flex h-[90vh] flex-col items-start justify-start w-[100%] p-3 rem"
       >
-        <h1>Contact Me</h1>
         <div>
+          <h1 className="text-left">Gareth Chandler</h1>
           <ul>
             <li>
-              <h5>Email: gchand05@me.com</h5>
+              <h5 className="text-left">Email: gchand05@me.com</h5>
             </li>
             <li>
               <a href="https://github.com/GarethChandler">
@@ -28,10 +29,8 @@ function Contact() {
               </a>
             </li>
           </ul>
-          <p className="mt-auto mb-10% text-center text-2xl">
-            Made with React and VS Code
-          </p>
         </div>
+        <p className="text-left text-xl mb-10">Made with React and VS Code</p>
       </section>
     </>
   );

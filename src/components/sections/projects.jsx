@@ -1,11 +1,12 @@
+import javaImg from "../../assets/Java/Screenshot 2023-05-03 163616.png";
+
 function Projects() {
   const projects = [
     {
-      courseName: "Backend Development",
-      imageUrl:
-        "../src/assets/database-computer-system-digital-storage-concept_53876-123742.jpg",
+      courseName: "Java Crypto Tax Application",
+      imageUrl: javaImg,
       description:
-        "This course will cover the fundamentals of backend development and the MERN stack.",
+        "This program has three classes, takes in user input and calculates crypto capital gains tax. \nIt uses arrays, can add, show, delete user details or investments. Prints to file. \nMark: 97% HD.",
       timeToComplete: "50 hrs",
     },
     {
@@ -36,20 +37,20 @@ function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group bg-[#353B3C] text-[#f3f4f6] p-4 rounded-4xl shadow-lg"
+              className="group bg-[#846A6A] text-[#f3f4f6] rounded-4xl shadow-lg"
             >
               <img
                 src={project.imageUrl}
                 alt={project.courseName}
-                className="w-full h-48 object-cover rounded-t-lg"
+                className="w-full h-48 object-cover rounded-t-4xl"
               />
-              <h2 className="text-xl font-bold mt-2 group-hover:scale-105 transition-transform duration-300">
+              <h2 className="text-xl font-bold m-5 group-hover:scale-105 transition-transform duration-300">
                 {project.courseName}
               </h2>
-              <p className="mt-2 group-hover:scale-105 transition-transform duration-300">
+              <p className="m-10 group-hover:scale-105 transition-transform duration-300">
                 {project.description}
               </p>
-              <p className="mt-2 group-hover:scale-105 transition-transform duration-300">
+              <p className="m-10 mb-5 group-hover:scale-105 transition-transform duration-300">
                 Time to complete: {project.timeToComplete}
               </p>
             </div>

@@ -1,8 +1,8 @@
 function Header() {
   return (
-    <header className="fixed top-0 left-0 w-full bg-transparent backdrop-blur-md text-black h-16 flex items-center px-20">
+    <header className="fixed top-0 left-0 w-full bg-transparent backdrop-blur-md text-[#8093F1] h-16 flex items-center px-20">
       <nav>
-        <ul className="flex space-x-4 text-xl font-bold">
+        <ul className="flex space-x-8 text-xl font-bold">
           <li>
             <a href="#about" className="hover:underline">
               About

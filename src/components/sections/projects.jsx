@@ -1,4 +1,5 @@
 import javaImg from "../../assets/Java/Screenshot 2023-05-03 163616.png";
+import businessAnal from "../../assets/BA/Screenshot 2023-05-03 165949.png";
 
 function Projects() {
   const projects = [
@@ -7,22 +8,18 @@ function Projects() {
       imageUrl: javaImg,
       description:
         "This program has three classes, takes in user input and calculates crypto capital gains tax. \nIt uses arrays, can add, show, delete user details or investments. Prints to file. \nMark: 97% HD.",
-      timeToComplete: "50 hrs",
     },
     {
-      courseName: "Frontend Development",
-      imageUrl:
-        "../src/assets/medium-shot-man-wearing-vr-glasses_23-2149126949.jpg",
+      courseName: "Business Analysis",
+      imageUrl: businessAnal,
       description:
-        "This course will cover the fundamentals of frontend development using the React.",
-      timeToComplete: "65 hrs",
+        "Case Study Assignment.\nProcess Analysis and Problem Solving.\nBusiness Analysis. Mark: 99% HD",
     },
     {
-      courseName: "Worm Farm Management",
+      courseName: "Web Development (Backend)",
       imageUrl:
         "../src/assets/gardening-youtube-template-design_23-2149547764.jpg",
       description: "Learn how to build, care and feed your hobby worm farm.",
-      timeToComplete: "10 hrs",
     },
   ];
 
@@ -49,9 +46,6 @@ function Projects() {
               </h2>
               <p className="m-10 group-hover:scale-105 transition-transform duration-300">
                 {project.description}
-              </p>
-              <p className="m-10 mb-5 group-hover:scale-105 transition-transform duration-300">
-                Time to complete: {project.timeToComplete}
               </p>
             </div>
           ))}

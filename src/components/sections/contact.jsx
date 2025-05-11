@@ -1,10 +1,15 @@
+import mapImage from "../../assets/map2.png";
+
 function Contact() {
   return (
     <>
       <section
         id="contact"
-        className="bg-[#353B3C] text-[#f3f4f6] h-[45vh] w-[100%] px-20 flex flex-col justify-end pb-10 rem"
+        className="bg-[#353B3C] bg-cover bg-center text-[#f3f4f6] h-[45vh] w-[100%] px-20 flex flex-col justify-end pb-10 rem"
         // className="bg-[#353B3C] text-[#f3f4f6] flex h-[90vh] flex-col items-start justify-start w-[100%] p-3 rem"
+        style={{
+          backgroundImage: `url(${mapImage})`,
+        }}
       >
         <div className="flex justify-between items-center w-full">
           <p className="text-left text-xl">Made with React and VS Code</p>

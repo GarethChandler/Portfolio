@@ -1,7 +1,12 @@
 function Timeline() {
   const milestones = [
     {
-      title: "Big yellow trucks",
+      title: "New Role, IT Business & System Analyst",
+      date: "2024",
+      description: "Moved into the warehouse team as an analyst",
+    },
+    {
+      title: "Big yellow trucks 🚀",
       date: "2023",
       description: "Started work at WesTrac CAT as an analyst",
     },
@@ -62,7 +67,7 @@ function Timeline() {
         "I was a pretty good soldier, but I wanted to help people, not shoot them.",
     },
     {
-      title: "Became a Choco",
+      title: "Became a choco",
       date: "2001",
       description:
         "Join the Army Reserve. Served at Taree Barracks for the 41st Battalion, Royal New South Wales Regiment.",
@@ -90,33 +95,31 @@ function Timeline() {
   ];
 
   return (
-    <>
-      <section className="flex flex-col items-center p-10 rem mt-10 mb-10">
-        <h1 className="text-center mb-10">Timeline</h1>
-        <div className="relative w-full max-w-3xl">
-          {/* Vertical Line (Left-Aligned) */}
-          {/* <div className="absolute left-4 w-[2px] h-full bg-[#8093F1]"></div> */}
-
+    <div id="timeline" className="flex justify-center">
+      <div className="w-2/5">
+        <h1 className="text-center text-2xl font-bold mt-10 mb-8">Timeline</h1>
+        <div className="relative">
           {milestones.map((milestone, index) => (
-            <div
-              key={index}
-              className="relative flex flex-col items-start mb-15 border border-red-500"
-            >
-              {/* Dot Positioned Above Each Section */}
-              <div className="absolute top-1 left-4 -translate-x-1/2 w-4 h-4 bg-[#8093F1] rounded-full"></div>
+            <div key={index} className="flex items-center mb-12 relative">
+              {/* Dot */}
+              <div className="w-4 h-4 bg-[#8093F1] rounded-full absolute left-2 top-1/2 transform -translate-y-1/2"></div>
 
-              {/* Content (Left-Aligned) */}
-              <div className="ml-10">
-                <h2 className="text-xl font-bold text-left">
-                  {milestone.date} - {milestone.title}
-                </h2>
-                <p className="text-left">{milestone.description}</p>
+              {/* Connecting Line */}
+              {index !== milestones.length - 1 && (
+                <div className="absolute left-3 top-full h-11 w-1 bg-[#8093F1]"></div>
+              )}
+
+              {/* Text Content */}
+              <div className="ml-8 text-left">
+                <h3 className="text-lg font-semibold">{milestone.title}</h3>
+                <p className="text-sm text-gray-500">{milestone.date}</p>
+                <p className="text-gray-700">{milestone.description}</p>
               </div>
             </div>
           ))}
         </div>
-      </section>
-    </>
+      </div>
+    </div>
   );
 }
 export default Timeline;

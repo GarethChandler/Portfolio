@@ -15,6 +15,11 @@ function Header() {
             </a>
           </li>
           <li>
+            <a href="#timeline" className="hover:underline">
+              Timeline
+            </a>
+          </li>
+          <li>
             <a href="#contact" className="hover:underline">
               Contact
             </a>

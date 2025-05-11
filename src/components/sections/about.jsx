@@ -12,8 +12,8 @@ function About() {
             <br />
           </span>
           With a background in Mining & Construction, and years of frontline
-          experience as a Special Operations Rescue Paramedic, I bring a sharp
-          analytical mind and a deep passion for leveraging technology in
+          health experience as a Special Operations Rescue Paramedic, I bring a
+          sharp analytical mind and a deep passion for leveraging technology in
           healthcare and beyond. My expertise lies in optimising complex
           systems, driving efficiency, and solving real-world challenges that
           make a difference. Certified in IT, I thrive at the intersection of

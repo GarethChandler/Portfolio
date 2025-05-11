@@ -1,13 +1,14 @@
 import javaImg from "../../assets/Java/Screenshot 2023-05-03 163616.png";
 import businessAnal from "../../assets/BA/Screenshot 2023-05-03 165949.png";
+import webDev from "../../assets/webDev.png";
 
 function Projects() {
   const projects = [
     {
-      courseName: "Java Crypto Tax Application",
+      courseName: "Java Tax Application",
       imageUrl: javaImg,
       description:
-        "This program has three classes, takes in user input and calculates crypto capital gains tax. \nIt uses arrays, can add, show, delete user details or investments. Prints to file. \nMark: 97% HD.",
+        "This Java application takes users inputs and calculates tax on crypto investments. \nMark: 97% HD.",
     },
     {
       courseName: "Business Analysis",
@@ -17,9 +18,8 @@ function Projects() {
     },
     {
       courseName: "Web Development (Backend)",
-      imageUrl:
-        "../src/assets/gardening-youtube-template-design_23-2149547764.jpg",
-      description: "Learn how to build, care and feed your hobby worm farm.",
+      imageUrl: webDev,
+      description: "React and Express and MongoDB web app. Mark 100%",
     },
   ];
 
@@ -27,10 +27,10 @@ function Projects() {
     <>
       <section
         id="projects"
-        className="flex flex-col items-center justify-start p-10 rem mt-25 mb-84"
+        className="flex flex-col items-center justify-start p-10 rem mt-10 mb-1"
       >
         <h1>Projects</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-5xl">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-4xl">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -39,14 +39,12 @@ function Projects() {
               <img
                 src={project.imageUrl}
                 alt={project.courseName}
-                className="w-full h-48 object-cover rounded-t-4xl"
+                className="w-full h-88 object-cover rounded-t-4xl"
               />
-              <h2 className="text-xl font-bold m-5 group-hover:scale-105 transition-transform duration-300">
-                {project.courseName}
-              </h2>
-              <p className="m-10 group-hover:scale-105 transition-transform duration-300">
-                {project.description}
-              </p>
+              <div className="group-hover:scale-110 transition-transform duration-300">
+                <h2 className="text-xl font-bold m-5">{project.courseName}</h2>
+                <p className="m-5">{project.description}</p>
+              </div>
             </div>
           ))}
         </div>

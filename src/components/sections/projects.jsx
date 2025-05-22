@@ -19,7 +19,7 @@ function Projects() {
     {
       courseName: "Web Development (Backend)",
       imageUrl: webDev,
-      description: "React and Express and MongoDB web app. Mark 100%",
+      description: "React, Express and MongoDB web app. Mark 100%",
     },
   ];
 

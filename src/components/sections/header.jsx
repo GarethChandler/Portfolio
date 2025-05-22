@@ -3,7 +3,7 @@ function Header() {
     <header className="fixed top-0 left-0 w-full bg-transparent backdrop-blur-md text-[#8093F1] h-16 flex items-center px-20 justify-between z-1">
       <h2 className="text-3xl font-bold">Gareth Chandler</h2>
       <nav>
-        <ul className="flex space-x-8 text-xl font-bold">
+        <ul className="flex space-x-8 text-Lg">
           <li>
             <a href="#about" className="hover:underline">
               About

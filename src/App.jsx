@@ -2,7 +2,6 @@
 import "./App.css";
 import { LoadingScreen } from "./components/LoadingScreen";
 import "./index.css";
-import { Routes, Route } from "react-router-dom";
 import About from "./components/sections/about";
 import Projects from "./components/sections/projects";
 import Contact from "./components/sections/contact";
@@ -16,7 +15,6 @@ function App() {
 
   return (
     <>
-      {/* {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />} */}
       <Header />
       <About />
       <Hero />
